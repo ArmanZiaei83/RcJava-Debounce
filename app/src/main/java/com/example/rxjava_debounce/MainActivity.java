@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void getObservable() {
-
         mainViewModel.getSearchView(searchView);
         mainViewModel.prepareObservables();
     }

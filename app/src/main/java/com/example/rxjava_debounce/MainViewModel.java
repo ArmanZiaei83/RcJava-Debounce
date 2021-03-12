@@ -68,12 +68,10 @@ public class MainViewModel extends ViewModel {
     }
 
     public void getSearchView (SearchView searchView){
-
         this.searchView = searchView;
     }
 
     public SearchView retrunSearchView (){
-
         return searchView;
     }
 }
