@@ -19,5 +19,14 @@ public class MainActivity extends AppCompatActivity {
 
         mainViewModel = new ViewModelProvider(this).get(MainViewModel.class);
 
+        getObservable();
     }
+
+    private void getObservable() {
+
+        mainViewModel.getSearchView(searchView);
+        mainViewModel.prepareObservables();
+    }
+
+
 }

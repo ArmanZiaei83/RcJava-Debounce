@@ -53,6 +53,7 @@ public class MainViewModel extends ViewModel {
             @Override
             public void onNext(@org.jetbrains.annotations.NotNull String s) {
                 System.out.println("onNext : " + s);
+                System.out.println("Time Spent on Operation : " + String.valueOf(System.currentTimeMillis() - firstRequest));
             }
 
             @Override
