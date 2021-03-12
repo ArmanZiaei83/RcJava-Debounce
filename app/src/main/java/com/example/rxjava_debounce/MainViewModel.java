@@ -34,7 +34,6 @@ public class MainViewModel extends ViewModel {
                             @Override
                             public boolean onQueryTextChange(String s) {
                                 if(!emitter.isDisposed()){
-                                    System.out.println("Not disposed : ");
                                     emitter.onNext(s);
                                 }
                                 return false;
@@ -52,7 +51,6 @@ public class MainViewModel extends ViewModel {
 
             @Override
             public void onNext(@org.jetbrains.annotations.NotNull String s) {
-                System.out.println("onNext : " + s);
                 System.out.println("Time Spent on Operation : " + String.valueOf(System.currentTimeMillis() - firstRequest));
             }
 
